@@ -4,7 +4,7 @@ namespace Drp\LaravelJsonApiParser\Validation;
 
 use Drp\JsonApiParser\Contracts\ValidatorExecutor;
 use Illuminate\Contracts\Validation\Validator as ValidatorContract;
-use Validator as ValidatorFactory;
+use Drp\LaravelJsonApiParser\Validation\Validator;
 
 class Validator implements ValidatorExecutor
 {
@@ -35,7 +35,7 @@ class Validator implements ValidatorExecutor
             $messages = $this->messages();
         }
 
-        $this->validator = ValidatorFactory::make([], (array) $rules, (array) $messages);
+        $this->validator = app('validator')->make([], (array) $rules, (array) $messages);
     }
 
     /**
