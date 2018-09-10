@@ -1,7 +1,15 @@
 {
     "name": "drpdigital/laravel-json-api-parser",
     "description": "Laravel integration for the jsonapi.org parser",
-    "keywords": ["drpdigital", "json", "api", "parser", "json api parser", "laravel", "laravel-json-api-parser"],
+    "keywords": [
+        "drpdigital",
+        "json",
+        "api",
+        "parser",
+        "json api parser",
+        "laravel",
+        "laravel-json-api-parser"
+    ],
     "type": "library",
     "license": "MIT",
     "authors": [
